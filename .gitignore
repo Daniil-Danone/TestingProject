@@ -1,0 +1,8 @@
+build/
+CMakeUserPresets.json
+CMakeUserPresets.json.user
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+saves/*.txt
