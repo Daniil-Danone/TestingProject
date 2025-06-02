@@ -23,5 +23,5 @@ cmake --build build
 
 Запуск генерации тестовых данных
 ```shell
-.\build\Debug\test_generator.exe
+.\build\Debug\generate_test_files.exe
 ```

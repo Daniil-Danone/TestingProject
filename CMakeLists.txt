@@ -23,8 +23,16 @@ add_executable(variant11
     ${SHARED_SOURCES}
 )
 
+# Генератор тестовых файлов
+add_executable(generate_test_files
+    shared/generate_test_files.cpp
+    variant10/identifier_analyzer.cpp
+    variant11/polynomial_derivative.cpp
+)
+
 # Установка кодировки для Windows
 if(WIN32)
     target_compile_options(variant10 PRIVATE /utf-8)
     target_compile_options(variant11 PRIVATE /utf-8)
+    target_compile_options(generate_test_files PRIVATE /utf-8)
 endif()
